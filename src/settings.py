@@ -52,7 +52,9 @@ INSTALLED_APPS = [
     "review",#mijoz fikri va bahosi
     "schedules",#berlgan xizmatlar mavjud vaqtlari
     "services",#xizmatlar turini talash
-    "users"# foydaluvchilar uchun alohia app
+    "users",# foydaluvchilar uchun alohia app
+    'rest_framework',
+    'api'
 ]
 
 MIDDLEWARE = [
@@ -115,7 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+AUTH_USER_MODEL = 'users.Users'
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
@@ -127,12 +129,13 @@ USE_I18N = True
 
 USE_TZ = True
 
-
+import os
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = "static/"
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
