@@ -1,7 +1,10 @@
-from rest_framework import serializers
-from schedules.models import Schedule
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ScheduleViewSet
 
-class ScheduleSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Schedule
-        fields = '__all__'
+router = DefaultRouter()
+router.register(r'schedules', ScheduleViewSet)
+
+urlpatterns = [
+    path('', include(router.urls)),
+]

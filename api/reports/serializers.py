@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from schedules.models import Schedule
+from reports.models import Report
 
-class ScheduleSerializer(serializers.ModelSerializer):
+class ReportSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Schedule
+        model = Report
         fields = '__all__'

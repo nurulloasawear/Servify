@@ -9,7 +9,7 @@ urlpatterns = [
     path('category/', include('api.category.urls')),
     path('chat/', include('api.chat_messages.urls')),
     path('liked/', include('api.liked.urls')),
-    # path('location/', include('api.location.urls')),
+    path('location/', include('api.location.urls')),
     path('notifications/', include('api.notifications.urls')),
     path('payment/', include('api.payment.urls')),
     path('proffessions/', include('api.proffessions.urls')),

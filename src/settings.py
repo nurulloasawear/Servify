@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     "services",#xizmatlar turini talash
     "users",# foydaluvchilar uchun alohia app
     'rest_framework',
-    'api'
+    'api',
+    'rest_framework_simplejwt'
 ]
 
 MIDDLEWARE = [
