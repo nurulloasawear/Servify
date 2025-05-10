@@ -1,4 +1,3 @@
-Albatta! Quyida **Servify** loyihasi uchun professional tarzda yozilgan `README.md` namunasi keltirilgan. Siz uni to‘g‘ridan-to‘g‘ri GitHub sahifangizga qo‘shishingiz mumkin.
 
 ---
 
@@ -107,7 +106,3 @@ Ushbu loyiha [MIT License](LICENSE) ostida tarqatiladi.
 
 ---
 
-```
-
-Agar README’da texnik diagrammalar, Swagger havolasi yoki loyiha video preview’larini qo‘shmoqchi bo‘lsangiz, xabar bering — qo‘shimcha bloklar kiritaman. Shu formatni `README.md` faylga joylashtiraymi?
-```
